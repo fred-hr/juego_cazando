@@ -13,6 +13,8 @@ let comidaX=0;
 let comidaY=0;
 
 let puntaje=0;
+let tiempo=10;
+let intervaloTiempo;
 
 function iniciarJuego(){
     gatoX=(canvas.width-ANCHO_GATO)/2;
@@ -23,6 +25,8 @@ function iniciarJuego(){
 
     graficarGato();
     graficarComida();
+
+    intervaloTiempo=setInterval(restarTiempo,1000);
 }
 function graficarGato(){
 
@@ -77,4 +81,9 @@ function detectarColision(){
 function aparecerComida(){
     comidaX=generarAleatorio(0,canvas.width-ANCHO_COMIDA);
     comidaY=generarAleatorio(0,canvas.height-ALTO_COMIDA);
+}
+function restarTiempo(){
+    tiempo=tiempo-1;
+    mostrarSpan("tiempo",tiempo);
+
 }
