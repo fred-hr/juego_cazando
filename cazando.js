@@ -40,8 +40,22 @@ function limpiarCanvas(){
 }
 function moverIzquierda(){
     gatoX=gatoX-10;
+    actualizarPantalla();
+}
+function moverDerecha(){
+    gatoX=gatoX+10;
+    actualizarPantalla();
+}
+function moverArriba(){
+    gatoY=gatoY-10;
+    actualizarPantalla();
+}
+function moverAbajo(){
+    gatoY=gatoY+10;
+    actualizarPantalla();
+}
+function actualizarPantalla(){
     limpiarCanvas();
     graficarGato();
     graficarComida();
-    
 }
