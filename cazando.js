@@ -95,3 +95,16 @@ function restarTiempo(){
     }
 
 }
+function reiniciarJuego(){
+    clearInterval(intervaloTiempo);
+    puntaje=0;
+    tiempo=10;
+    gatoX=(canvas.width-ANCHO_GATO)/2;
+    gatoY=(canvas.height-ALTO_GATO)/2;
+    comidaX=canvas.width-ANCHO_COMIDA;
+    comidaY=canvas.height-ALTO_COMIDA;
+    mostrarSpan("puntos",puntaje);
+    mostrarSpan("tiempo",tiempo);
+    actualizarPantalla();
+    intervaloTiempo=setInterval(restarTiempo,1000);
+}
