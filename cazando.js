@@ -2,7 +2,7 @@ let canvas=document.getElementById("areaJuego");
 let ctx=canvas.getContext("2d");
 
 const ANCHO_GATO=50;
-const ALTO_GATO=50;
+const ALTO_GATO=40;
 const ANCHO_COMIDA=30;
 const ALTO_COMIDA=30;
 
@@ -34,4 +34,14 @@ function graficarComida(){
 function graficarRectangulo(x,y,ancho,alto,color){
     ctx.fillStyle=color;
     ctx.fillRect(x,y,ancho,alto);
+}
+function limpiarCanvas(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+}
+function moverIzquierda(){
+    gatoX=gatoX-10;
+    limpiarCanvas();
+    graficarGato();
+    graficarComida();
+    
 }
