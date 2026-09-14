@@ -75,6 +75,10 @@ function detectarColision(){
        aparecerComida();
        puntaje=puntaje+1;
        mostrarSpan("puntos",puntaje);
+       if(puntaje==6){
+        clearInterval(intervaloTiempo);
+        alert("!GANASTE¡¡¡")
+       }
        actualizarPantalla();
     }
 }
@@ -85,5 +89,9 @@ function aparecerComida(){
 function restarTiempo(){
     tiempo=tiempo-1;
     mostrarSpan("tiempo",tiempo);
+    if(tiempo==0){
+        clearInterval(intervaloTiempo);
+        alert("GAME OVER");
+    }
 
 }
