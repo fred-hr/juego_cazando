@@ -41,21 +41,30 @@ function limpiarCanvas(){
 function moverIzquierda(){
     gatoX=gatoX-10;
     actualizarPantalla();
+    detectarColision();
 }
 function moverDerecha(){
     gatoX=gatoX+10;
     actualizarPantalla();
+    detectarColision();
 }
 function moverArriba(){
     gatoY=gatoY-10;
     actualizarPantalla();
+    detectarColision();
 }
 function moverAbajo(){
     gatoY=gatoY+10;
     actualizarPantalla();
+    detectarColision();
 }
 function actualizarPantalla(){
     limpiarCanvas();
     graficarGato();
     graficarComida();
+}
+function detectarColision(){
+    if(gatoX+ANCHO_GATO>comidaX && gatoX<comidaX+ANCHO_COMIDA && gatoY+ALTO_GATO>comidaY && gatoY<comidaY+ALTO_COMIDA){
+        alert("!COMIDA ATRAPADA¡")
+    }
 }
