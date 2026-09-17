@@ -1,0 +1,4 @@
+prompt 1
+Actúa como programador y diseñador web.
+Mejora mi juego Cazando usando solo HTML y CSS, sin tocar JavaScript. Quiero que tenga un estilo arcade, colores neón,
+botones más llamativos y que se vea bien en computadora y celular
