@@ -92,7 +92,9 @@ function restarTiempo(){
     if(tiempo==0){
         clearInterval(intervaloTiempo);
         alert("GAME OVER");
+        reiniciarJuego();
     }
+    
 
 }
 function reiniciarJuego(){

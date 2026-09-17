@@ -1,75 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Juego Cazando</title>
   <link rel="stylesheet" href="cazando.css">
   <script src="utilitarios.js"></script>
 </head>
-
 <body onload="iniciarJuego();">
-
   <div class="contenedor">
-
     <header class="encabezado">
-      <p class="modoArcade">★ ARCADE MODE ★</p>
-      <h1>JUEGO CAZANDO</h1>
-      <p class="subtitulo">Atrapa, suma puntos y supera el tiempo</p>
-      <p class="autor">Autor: Freddy Campuzano</p>
+      <img src="gato.png" class="imagenDecorativa" alt="Gato">
+      <div class="datosEncabezado">
+        <p class="modoArcade">★ ARCADE MODE ★</p>
+        <h1>JUEGO CAZANDO</h1>
+        <p class="subtitulo">Atrapa, suma puntos y supera el tiempo</p>
+        <p class="autor">Autor: Freddy Campuzano</p>
+      </div>
+      <img src="comida.png" class="imagenDecorativa" alt="Comida">
     </header>
-
     <div class="panel">
       <div class="datoPanel">
         <span class="iconoPanel">🏆</span>
         <span>Puntos:</span>
         <span id="puntos">0</span>
       </div>
-
       <div class="datoPanel">
         <span class="iconoPanel">⏱️</span>
         <span>Tiempo:</span>
         <span id="tiempo">10</span>
       </div>
     </div>
-
     <div class="zonaJuego">
       <canvas id="areaJuego" width="500" height="500"></canvas>
     </div>
-
     <p class="tituloControles">CONTROLES</p>
-
     <div class="controles">
-
       <button class="botonMovimiento" onclick="moverArriba()">⬆</button>
-
       <br>
-
       <button class="botonMovimiento" onclick="moverIzquierda()">⬅</button>
-
       <button class="botonMovimiento" onclick="moverAbajo()">⬇</button>
-
       <button class="botonMovimiento" onclick="moverDerecha()">➡</button>
-
       <br>
-
-      <button class="botonReiniciar" onclick="reiniciarJuego()">
-        ↻ REINICIAR
-      </button>
-
+      <button class="botonReiniciar" onclick="reiniciarJuego()">↻ REINICIAR</button>
     </div>
-
     <div class="volverMenu">
-      <a href="https://menu-u7oc.vercel.app/" class="botonMenu">
-        ← VOLVER AL MENÚ
-      </a>
+      <a href="https://menu-u7oc.vercel.app/" class="botonMenu">← VOLVER AL MENÚ</a>
     </div>
-
     <p id="mensaje"></p>
-
   </div>
-
   <script src="cazando.js"></script>
-
 </body>
-
 </html>

@@ -2,3 +2,10 @@ prompt 1
 Actúa como programador y diseñador web.
 Mejora mi juego Cazando usando solo HTML y CSS, sin tocar JavaScript. Quiero que tenga un estilo arcade, colores neón,
 botones más llamativos y que se vea bien en computadora y celular
+
+prompt 2
+Actúa como programador y diseñador web ayúdame a mejorar mi juego Cazando agregando imágenes y un fondo con HTML y CSS. 
+Quiero colocar un gato, comida y un fondo nocturno estilo arcade que combine con el diseño.
+
+prompt3
+Haz que el fondo se vea mejor con el diseño arcade y que las imágenes del gato y la comida combinen mejor con los colores de la página.
